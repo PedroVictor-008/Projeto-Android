@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Android';
+    src: url(../fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --color0: #ebe5c5; 
+    --color1: #83e1ad;
+    --color2: #3ddc84;
+    --color3: #2fa866;
+    --color4: #1a5c37;
+    --color5: #063d1e;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque:"Bebas Neue", serif;
+    --fonte-android: 'Android';     
+}
+
+body{
+    background-color: var(--color0);
+    font-family: var(--fonte-padrao);
+}
+
+div.video{
+    background-color: var(--color5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+    border-radius: 40px 0px;
+}
+
+div.video > iframe{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+}
+
+a.externo::after{
+    content: '\200A0\1F517';
+}
+
+header{
+    background: linear-gradient(to top, var(--color5), var(--color3));
+    min-height: 100px;
+    text-align: center;
+}
+
+header > h1{
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    color: white;
+    padding-top: 20px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+header > p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 700px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8.5px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+nav{
+    background-color: var(--color5);
+    padding: 7.5px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.45);
+}
+
+nav > a {
+    color: white;
+    padding: 6.5px;
+    text-decoration: none;
+    transition-duration: 0.35s;
+}
+
+nav > a:hover{
+    background-color: var(--color3);
+    color: var(--color5);
+    border-radius: 5.5px;   
+}
+
+main{
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 25px 0px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.50);
+}
+
+main  img {
+    width: 100%;
+}
+
+
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main  h1{
+    font-family: var(--fonte-android);
+    color: var(--color5);
+}
+
+main h2{
+    font-family: var(--fonte-android);
+    color: var(--color4);
+    font-size: 1.3em;
+    background: linear-gradient(to right, var(--color1),  transparent);
+    text-indent: 9.5px;
+}
+
+main p{
+    margin: 20px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+main strong{
+    color: var(--color4);
+    font-weight: bold;
+}
+
+main a{
+    font-weight: bold;
+    color: var(--color5);
+    transition-duration: 0.40s;
+}
+
+main a:hover{
+    text-decoration: none;
+    background-color: var(--color2);
+    color: var(--color5);
+    border-radius: 5.5px; 
+    padding: 4.5px;
+
+}
+
+figcaption#legenda{
+    margin-bottom: 10px ;
+}
+
+aside{
+    background-color: var(--color1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+aside > h3{
+    background: linear-gradient(to right, var(--color4), transparent);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2 ;
+}
+
+footer{
+    background-color: var(--color5);
+    color: white;
+    padding: 8.5px;
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    font-size: 0.85em;
+    
+}
+
+footer p {
+    padding-bottom: 2.5px; 
+    padding-top: 2.5px; 
+}
+
+footer a {
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+}
+
+
+footer a:hover{
+    text-decoration: none;
+    color: var(--color5);
+    background-color: var(--color3);
+    padding: 3.5px 5px;
+    border-radius: 5.5px; 
+}
